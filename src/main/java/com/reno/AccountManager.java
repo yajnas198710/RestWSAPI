@@ -52,7 +52,10 @@ public class AccountManager {
 						.setAacountBalance(accountMap.get(fromAccountNumber).getAacountBalance() - depositAmmount);
 				transferFlag = true;
 			}
-
+			if(!transferFlag){
+				account.setAccountResponse("Balance is Not Sufficiant");
+				return account;
+			}
 			ArrayList<Transactions> depositHistory = new ArrayList<Transactions>();
 			Transactions depositTransaction = new Transactions();
 			depositHistory.add(depositTransaction);
