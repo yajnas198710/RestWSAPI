@@ -1,0 +1,33 @@
+** Welcome to REST WEB Service API *************
+
+Description: This application is contains functionality like
+1) Create account
+2) deposit fund
+3) transfer fund
+
+***** Features *****
+application holds data in collection Objects and data is available till the application is running
+once application down or stop whole data will be lost.
+
+*** Steps To Run ************
+1) import the application as maven project > existing maven project
+2) Clean and install check build sucess
+3) if build not success update the JDK library path under build path
+4) once build path done run clean install
+5) build Success
+6) GO TO RestServer.java run as a java application.
+7) application is up and running
+8) for testing APIs you can use Postman or just hit below mentioned URL in any Browser.
+
+****** Application URL for APIs *******
+Note : Update the input parameter accordingly.
+
+Add Account:
+http://localhost:8282/accountManager/addAccount?input=Arinjay
+
+depositFund API:
+http://localhost:8282/accountManager/depositFund?accountNumber=2840&deposit=50000
+
+transferFund API:
+
+http://localhost:8282/accountManager/transferFund?fromAccountNumber=4920&toAccountNumber=3650&deposit=10000
