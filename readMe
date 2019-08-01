@@ -28,6 +28,12 @@ http://localhost:8282/accountManager/addAccount?input=Arinjay
 depositFund API:
 http://localhost:8282/accountManager/depositFund?accountNumber=2840&deposit=50000
 
+accountDetails:
+http://localhost:8282/accountManager/accountDetails?input=Arinjay
+
 transferFund API:
 
 http://localhost:8282/accountManager/transferFund?fromAccountNumber=4920&toAccountNumber=3650&deposit=10000
+
+*** GIT Clone URL ************
+https://github.com/yajnas198710/RestWSAPI.git
