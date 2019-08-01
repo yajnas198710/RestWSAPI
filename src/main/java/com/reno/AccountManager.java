@@ -123,12 +123,10 @@ public class AccountManager {
     		account.setAccountHolder(accountMap.get(accountNumber).getAccountHolder());
     		account.setAccountNumber(accountMap.get(accountNumber).getAccountNumber());
     		account.setAacountBalance(accountMap.get(accountNumber).getAacountBalance());
-    		
-    		System.out.println("Printing Deposit Account Details: - START ");
+    		logger.info("This is info : " + "Printing Deposit Account Details: - START ");
 			for (Map.Entry<String, Account> entry : accountMap.entrySet()) {
-				System.out.println("Account Number : " + entry.getKey() + "Account  Holder : " + entry.getValue().getAccountHolder()+ " Account  Balance : " + entry.getValue().getAacountBalance());
+				logger.info("Account Number : " + entry.getKey() + "Account  Holder : " + entry.getValue().getAccountHolder()+ " Account  Balance : " + entry.getValue().getAacountBalance());
 			}
-			logger.info("This is info : " + "Printing Deposit Account Details: - STOP ");
     	}
     	return account;
     }
@@ -145,8 +143,6 @@ public class AccountManager {
     		accountHoler.add(accountHolder);
     		accountMap.put(accountNumber.toString(), createAccount(accountHolder,accountNumber));
     		account.setInput(accountHolder);
-        	System.out.println("Account Holder Size is "+accountMap.size());
-//            account.setAccountResponse("Account for "+accountHolder+ " Added "+"Account Number Is "+accountNumber);
             account.setAccountNumber(accountNumber);
             account.setAacountBalance(0.0);
             account.setAccountHolder(accountHolder);
