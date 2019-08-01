@@ -1,0 +1,2 @@
+ 	System.out.println("http://localhost:8282/calculator/square?input=4");
+ 	
