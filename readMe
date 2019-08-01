@@ -29,7 +29,7 @@ depositFund API:
 http://localhost:8282/accountManager/depositFund?accountNumber=2840&deposit=50000
 
 accountDetails:
-http://localhost:8282/accountManager/accountDetails?input=Arinjay
+http://localhost:8282/accountManager/accountDetails?input=2788
 
 transferFund API:
 
